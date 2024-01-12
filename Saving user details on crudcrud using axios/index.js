@@ -44,7 +44,7 @@ function handleFormSubmit(event){
     editBtn.className = 'edit-btn';
     newLi.appendChild(editBtn);
 
-    list.addEventListener('click', function(event){
+    newLi.addEventListener('click', function(event){
         if(event.target.classList.contains('delete-btn')){
             const userToDelete = event.target.parentElement;
             userToDelete.remove();
